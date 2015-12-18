@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.xs</groupId>
+		<artifactId>pom</artifactId>
+		<version>0.9.3.1</version>
+	</parent>
+
+	<artifactId>jtk</artifactId>
+	<version>0.9.0.1</version>
+	<packaging>jar</packaging>
+	
+	<name>Java ToolKit (JTK)</name>
+	<url>github.com/sanke69/jtk.git</url>
+
+	<scm>
+		<tag>global repository</tag>
+		<url>https://github.com/sanke69/jtk.git</url>
+		<connection>git@github.com:sanke69/jtk.git</connection>
+		<developerConnection>git@github.com:sanke69/jtk.git</developerConnection>
+	</scm>
+
+	<dependencies>
+		<dependency><!-- mySQL Integration -->
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>[5,)</version>
+		</dependency>
+		
+		<dependency><!-- TAR, TAR.GZ Format Integration -->
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-compress</artifactId>
+			<version>[1,)</version>
+		</dependency>
+
+		<dependency><!-- FOR TEST PURPOSE ONLY !!! -->
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<type>jar</type>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+</project>
