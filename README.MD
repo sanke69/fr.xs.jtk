@@ -8,14 +8,14 @@ In order to be compiled or used as dependency in your project, this project need
 
 ```
 cd <where_you_want>
-git clone https://github.com/sanke69/pom.git
+git clone https://github.com/sanke69/fr.xs.pom.git
 cd pom
 mvn install
 ```  
 then
 ```
 cd ..
-git clone https://github.com/sanke69/jtk.git
+git clone https://github.com/sanke69/fr.xs.jtk.git
 cd jtk
 mvn install
 ```  
