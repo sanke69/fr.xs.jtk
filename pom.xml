@@ -5,7 +5,7 @@
 
 	<parent>
 		<groupId>com.xs</groupId>
-		<artifactId>pom</artifactId>
+		<artifactId>fr.xs.pom</artifactId>
 		<version>0.9.3.1</version>
 	</parent>
 
