@@ -20,7 +20,18 @@ public class TimeHelper {
 	public static final ZoneId 				localZoneID     = ZoneId.systemDefault();
 	public static final ZoneOffset			localZoneOffset = ZoneOffset.UTC;
 
-	
+
+	public static String hashTag() {
+		DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyyMMdd.HHmmss");
+		
+		try {
+		    return LocalDateTime.ofInstant(Instant.now(), localZoneOffset).format(format);
+		} catch (DateTimeException exc) {
+		    System.out.printf("%s can't be formatted with pattern!%n", Instant.now(), "yyyyMMdd.HHmmss");
+		    throw exc;
+		}
+	}
+
 
 	/**
 	 * Get an Instant from local parameters: year, month, day, hour, minutes, seconds
